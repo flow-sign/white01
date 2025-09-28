@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IGaming Insights</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0c0016, #310042);
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      color: #fff;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 80px 40px;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin: 20px 0;
+      color: #ddd;
+    }
+
+    .hero button {
+      background: none;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 12px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .hero button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .graphics {
+      position: absolute;
+      right: 40px;
+      top: 120px;
+      width: 400px;
+      max-width: 50%;
+    }
+
+    @media(max-width: 900px){
+      .graphics{
+        position: static;
+        width: 100%;
+        margin-top: 30px;
+      }
+      .hero{
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+      header{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="IGaming Insights">
+    </div>
+    <nav>
+      <a href="#" class="active">HOME</a>
+      <a href="#">REGISTER</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>HIT THE<br>JACKPOT</h1>
+    <p>Get ready for non-stop action and big wins!</p>
+    <button>REGISTER NOW</button>
+  </section>
+
+  <img class="graphics" src="dice.png" alt="Dice and chips">
+</body>
+</html>
